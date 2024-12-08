@@ -1,73 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário de Contato</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Dias Leo</h1>
-      <h2>Qualidade e Velocidade</h2>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dias Leo</h1>
+    <h2>Qualidade e Velocidade</h2>
+  </header>
 
-    <main>
-      <form action="" onsubmit="return confirmSubmission()">
-        <img src="imagens\images.jpg" alt="Leo" />
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required />
-        <br />
+  <main>
+    <form action="back.php" method="post">
+      <img src="imagens/images.jpg" alt="Leo" />
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <br />
 
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        <br />
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message" rows="5" required></textarea>
-        <br />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <br />
 
-        <button type="submit">Enviar</button>
-      </form>
+      <label for="message">Mensagem</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+      <br />
 
-      <h2>Tipos de Consultoria</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Consultoria</th>
-            <th>Descrição</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Consultoria em TI</td>
-            <td>
-              Fornecemos soluções e otimizações para sistemas de tecnologia da
-              informação.
-            </td>
-          </tr>
-          <tr>
-            <td>Consultoria Empresarial</td>
-            <td>
-              Ajudamos a melhorar a gestão e organização dos processos
-              empresariais.
-            </td>
-          </tr>
-          <tr>
-            <td>Consultoria em Marketing Digital</td>
-            <td>
-              Auxiliamos empresas a otimizar sua presença online e alcançar mais
-              clientes.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
+      <button type="submit">Enviar</button>
+    </form>
 
-    <script>
-      function confirmSubmission() {
-        alert("Formulário enviado com sucesso!");
-        return false;
-      }
-    </script>
-  </body>
+    <h2>Tipos de Consultoria</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Consultoria</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consultoria em TI</td>
+          <td>Fornecemos soluções e otimizações para sistemas de tecnologia da informação.</td>
+        </tr>
+        <tr>
+          <td>Consultoria Empresarial</td>
+          <td>Ajudamos a melhorar a gestão e organização dos processos empresariais.</td>
+        </tr>
+        <tr>
+          <td>Consultoria em Marketing Digital</td>
+          <td>Auxiliamos empresas a otimizar sua presença online e alcançar mais clientes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
